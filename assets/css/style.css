@@ -1,6 +1,9 @@
 @charset "utf-8";
+html {
+  height: 1050px;
+}
 
-html, body, .wrapper, .inner, .main_content{
+body, .wrapper, .inner, .main_content{
   height: 100%;
 }
 
@@ -29,6 +32,11 @@ body {
   text-align: center;
   color: #545658;
   font-size: 24px;
+}
+
+.form_area {
+  margin-top: 20px;
+  color: #545658;
 }
 
 .sns_icon {
@@ -67,7 +75,11 @@ body {
   font-size: 12px;
   text-align: center;
   margin-top: 5px;
-  
+}
+
+.account_form {
+  font-size: 12px;
+  padding: 0 64px;
 }
 
 .account_info {
@@ -75,6 +87,93 @@ body {
 }
 
 .name_area {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
 
+.form_size {
+  width: 100%;
+}
+
+.required_item:after {
+  content: "※";
+  color: red;
+  margin-left: 4px;
+}
+
+.first_name {
+  margin-left: 20px;
+}
+
+.input_area {
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  height: 30px;
+  width: 100%;
+  margin-top: 4px;
+  color: #545658;
+}
+
+.radio_area {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #545658;
+}
+
+.radio_button {
+  vertical-align: baseline;
+  margin-left: 10px;
+}
+
+.radio_button:first-child {
+  margin-left: 0;
+}
+
+.select_area {
+  width: 50%;
+}
+
+.course {
+  margin-top: 20px;
+  color: #545658;
+  display: block;
+}
+
+.checkbox_area {
+  display: block;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.checkbox_area:first-child {
+  margin-top: 0;
+}
+
+.input_area-note {
+  height: 100px;
+  vertical-align: top;
+}
+
+.create_account {
+  text-align: center;
+}
+
+.button-create_account {
+  margin-top: 20px;
+  width: 100%;
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
+}
+
+.agreement {
+  margin-top: 20px;
+}
+
+.link_color {
+  color: #01a6a4;
 }
