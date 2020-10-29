@@ -119,12 +119,13 @@ body {
 }
 
 .form_area {
-  margin-top: 21px;
+  margin-top: 20px;
 }
 
 .name_area {
   display: flex;
   justify-content: center;
+  margin-top: 21px;
 }
 
 .form_size {
@@ -219,7 +220,7 @@ span::before {
 }
 
 .birthplace {
-  margin-top: 23px;
+  margin-top: 20px;
   position: relative;
 }
 
@@ -238,6 +239,10 @@ span::before {
 .select_area {
   width: 50%;
   appearance: none;
+}
+
+.phone_number {
+  margin-top: 20px;
 }
 
 .course {
@@ -333,7 +338,7 @@ span::before {
 .footer {
   font-size: 12px;
   text-align: center;
-  padding: 35px 0 40px;
+  padding: 34px 0 42px;
 }
 
 .account_question {
