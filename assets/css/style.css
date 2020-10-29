@@ -18,11 +18,12 @@ body {
   background-color: #fff;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
   border-radius: 4px;
-  padding: 32px 0 50px;
+  padding: 48px 0;
+  margin-top: 32px;
 }
 
 .main {
-  padding: 48px 64px 0 64px;
+  padding: 0 64px;
 }
 
 .title_text {
@@ -142,6 +143,7 @@ body {
 
 .gender_area {
   margin-top: 20px;
+  width: 50%;
 }
 
 .input_area {
@@ -165,24 +167,31 @@ body {
 }
 
 .radio_area {
-  margin-top: 8px;
+  margin-top: 5px;
   font-size: 16px;
   color: #545658;  
-  margin-left: 20px;
+  display: flex;
+  justify-content: end;
 }
 
 .radio_label {
-  margin-left: 35px;
   position: relative;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 .radio_label:first-child {
   margin-left: 0;
 }
 
+
 .radio_button {
   display: none;
+}
+
+span {
+  padding: 3px 3px 3px 20px;
+  display: inline-block;
 }
 
 span::before {
@@ -194,7 +203,8 @@ span::before {
   border-radius: 50%;
   position: absolute;
   top: 0;
-  left: -20px;
+  left: 0;
+  margin-top: 3px;
 }
 
 .radio_button:checked + span::after {
