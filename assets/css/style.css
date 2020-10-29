@@ -21,8 +21,8 @@ body {
   margin-top: 32px;
 }
 
-.main_content {
-  padding-top: 45px;
+.main {
+  padding: 48px 64px;
 }
 
 .title_text {
@@ -36,47 +36,53 @@ body {
   color: #545658;
 }
 
-.sns_icon {
-  margin-top: 30px;
+.icon_area {
+  margin-top: 24px;
   display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+.Facebook_icon {
+  width: 50%;
+  border-color: #3b5999;
 }
 
 .button {
-  font-size: 13px;
-  text-align: center;
-  padding: 15px 70px;
+  border-radius: 3px;
   border: 1px solid #d9d9d9;
+  display: inline-block;
+  font-size: 13px;
+  width: 100%;
+  padding: 13px 0;
   box-sizing: border-box;
 }
 
-.Facebook {
-  border-radius: 4px;
-  background-color: #3b5999;
-}
-
 .Facebook_link {
+  background-color: #3b5999;
   color: #fff;
+  border-color: #3b5999;
 }
 
-.Google {
-  margin-left: 10px;
+.Google_icon {
+  width: 50%;
+  box-sizing: border-box;
+  margin-left: 8px;
 }
 
 .Google_link {
   color: #dd4b39;
 }
 
+
 .explanation_text {
   color: #949697;
   font-size: 12px;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .account_form {
   font-size: 12px;
-  padding: 0 64px;
 }
 
 .account_info {
@@ -175,7 +181,7 @@ body {
   color: #01a6a4;
 }
 
-.bottom_content {
+.footer {
   font-size: 12px;
   text-align: center;
 }
