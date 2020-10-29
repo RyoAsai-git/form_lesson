@@ -235,15 +235,17 @@ span::before {
   position: relative;
 }
 
-.checkbox_area::before {
+.course_name::before {
   content: "";
   border: solid 1px #d9d9d9;
   position: absolute;
   width: 15px;
   height: 15px;
+  position: absolute;
+  left: -25px;
 }
 
-.checkbox_area::after {
+/* .checkbox_area::after {
   content: "";
   position: absolute;
   border-right: 3px solid #01bfbd;
@@ -253,10 +255,23 @@ span::before {
   width: 8px;
   top: -4px;
   left: 6px;
+} */
+
+.checkbox:checked  + .course_name::after{
+  content: "";
+  position: absolute;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  top: -4px;
+  left: -20px;
 }
 
 .course_name {
   margin-left: 25px;
+  position: relative;
 }
 
 .checkbox {
