@@ -227,7 +227,27 @@ span::before {
 .checkbox_area {
   display: block;
   font-size: 16px;
+  margin-top: 10px;
+}
+
+.course label:first-of-type {
   margin-top: 5px;
+}
+
+.course_name {
+  margin-left: 25px;
+}
+
+.checkbox_area::before {
+  content: "";
+  border: solid 1px #d9d9d9;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+
+.checkbox {
+  display: none;
 }
 
 .checkbox_area:first-child {
