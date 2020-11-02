@@ -63,10 +63,10 @@
           <div class="form_area birthplace">
             <p>出身</p>
             <select id="birthplace" name="birthplace" class="input_area select_area">
-              <option value="">東京</option>
-              <option value="">千葉</option>
-              <option value="">埼玉</option>
-              <option value="">神奈川</option>
+              <option value="Tokyo">東京</option>
+              <option value="Chiba">千葉</option>
+              <option value="Saitama">埼玉</option>
+              <option value="Kanagawa">神奈川</option>
             </select>
           </div>
 
@@ -92,19 +92,19 @@
           <div class="form_area course">
             <p>希望コース</p>
             <label for="front" class="checkbox_area">
-              <input type="checkbox" id="front" name="front" value="1" class="checkbox">
+              <input type="checkbox" id="front" name="front" value="front" class="checkbox">
               <p class="course_name">
                 フロントエンド
               </p>
             </label>
             <label for="back" class="checkbox_area">
-            <input type="checkbox" id="back" name="back" value="2" class="checkbox">
+            <input type="checkbox" id="back" name="back" value="back" class="checkbox">
               <p class="course_name">
                 バックエンド
               </p>
             </label>
             <label for="app" class="checkbox_area">
-              <input type="checkbox" id="app" name="app" value="3" class="checkbox">
+              <input type="checkbox" id="app" name="app" value="app" class="checkbox">
               <p class="course_name">
                 アプリ
               </p>
@@ -123,9 +123,10 @@
               </p>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
+
     <footer class="footer">
       <p class="account_question">すでにアカウントをお持ちですか？
         <a href="" class="link_color">ログイン</a>
@@ -133,6 +134,6 @@
       <p class="authentication_question">
         <a href="" class="link_color">認証メールが届きませんか？</a>
       </p>
-    </div>
+    </footer>
   </body>
 </html>
