@@ -49,8 +49,9 @@ body {
   box-sizing: border-box;
   display: inline-block;
   font-size: 13px;
-  width: 100%;
   padding: 13px 0;
+  transition: 0.3s;
+  width: 100%;
 }
 
 .Facebook_link {
@@ -282,10 +283,19 @@ span::before {
   margin-top: 23px;
   padding: 11px;
   width: 100%;
+  outline: none;
 }
 
 .button-create_account:hover {
   background-color: #01a6a4;
+}
+
+.button-create_account:active {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  color: #01a6a4;
+  padding: 13px;
 }
 
 .agreement {
@@ -295,6 +305,12 @@ span::before {
 
 .link_color {
   color: #01a6a4;
+}
+
+.link_color:hover {
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
+  color: #01bfbd;
 }
 
 .footer {
