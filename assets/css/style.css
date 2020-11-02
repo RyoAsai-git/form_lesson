@@ -281,13 +281,15 @@ span::before {
   cursor: pointer;
   font-size: 13px;
   margin-top: 23px;
-  padding: 11px;
-  width: 100%;
   outline: none;
+  padding: 11px;
+  transition: 0.3s;
+  width: 100%;
 }
 
 .button-create_account:hover {
   background-color: #01a6a4;
+  transition: 0.3s;
 }
 
 .button-create_account:active {
