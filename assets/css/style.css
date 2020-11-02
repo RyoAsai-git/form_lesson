@@ -1,9 +1,3 @@
-/* TO DO */
-/* リファクタリング */
-/* クラスごとまとめる */
-/* 不要なプロパティ削除 */
-/*  */
-
 @charset "utf-8";
 
 body, .wrapper, .inner, .main_content{
@@ -15,13 +9,13 @@ body {
 }
 
 .inner {
-  margin: 0 auto;
-  width: 640px;
   background-color: #fff;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
   border-radius: 4px;
-  padding: 48px 0;
+  margin: 0 auto;
   margin-top: 32px;
+  padding: 48px 0;
+  width: 640px;
 }
 
 .main {
@@ -29,19 +23,19 @@ body {
 }
 
 .title_text {
-  text-align: center;
   color: #545658;
   font-size: 24px;
+  text-align: center;
 }
 
 .form_area {
-  margin-top: 20px;
   color: #545658;
+  margin-top: 20px;
 }
 
 .icon_area {
-  margin-top: 24px;
   display: flex;
+  margin-top: 24px;
   text-align: center;
 }
 
@@ -52,17 +46,17 @@ body {
 .button {
   border-radius: 3px;
   border: 1px solid #d9d9d9;
+  box-sizing: border-box;
   display: inline-block;
   font-size: 13px;
   width: 100%;
   padding: 13px 0;
-  box-sizing: border-box;
 }
 
 .Facebook_link {
   background-color: #3b5999;
-  color: #fff;
   border-color: #3b5999;
+  color: #fff;
 }
 
 .Facebook_link:hover {
@@ -84,8 +78,8 @@ body {
 .explanation_text {
   color: #949697;
   font-size: 12px;
-  text-align: center;
   margin-top: 8px;
+  text-align: center;
 }
 
 .account_form {
@@ -94,35 +88,28 @@ body {
 }
 
 .account_info {
-  margin-top: 20px;
   position: relative;
-  text-align: center;
 }
 
 .account_info::before {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 100%;
   border-bottom: solid 1px #ececec;
-  top: 30%;
+  content: "";
+  height: 1px;
   left: 0;
+  position: absolute;
+  top: 30%;
+  width: 100%;
 }
 
 .account_text {
+  background-color: #fff;
   display: inline-block;
   position: relative;
-  background-color: #fff;
   padding: 0 10px;
 }
 
-/* .form_area {
-  margin-top: 20px;
-} */
-
 .name_area {
   display: flex;
-  justify-content: center;
   margin-top: 21px;
 }
 
@@ -138,11 +125,6 @@ body {
 
 .first_name {
   margin-left: 16px;
-}
-
-.gender_area {
-  /* margin-top: 20px;
-  width: 50%; */
 }
 
 .input_area {
@@ -168,9 +150,7 @@ body {
 .radio_area {
   margin-top: 5px;
   font-size: 16px;
-  color: #545658;  
   display: flex;
-  justify-content: end;
 }
 
 .radio_label {
@@ -183,7 +163,6 @@ body {
   margin-left: 0;
 }
 
-
 .radio_button {
   display: none;
 }
@@ -195,57 +174,50 @@ span {
 
 span::before {
   content: "";
-  height: 14px;
-  width: 14px;
   background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
   border-radius: 50%;
+  height: 14px;
+  margin-top: 3px;
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 3px;
+  width: 14px;
 }
 
 .radio_button:checked + span::after {
   content: '';
-  position: absolute;
-  left: 4px;
-  top: 7px;
-  height: 8px;
-  width: 8px;
   border-radius: 50%;
   background-color: #01bfbd;
+  height: 8px;
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  width: 8px;
 }
 
 .birthplace {
-  /* margin-top: 20px; */
   position: relative;
 }
 
 .birthplace::after {
   content: "";
-  position: absolute;
-  transform: rotate(45deg);
-  height: 5px;
-  width: 5px;
   border-right: 2px solid #d9d9d9;
   border-bottom: 2px solid #d9d9d9;
+  position: absolute;
+  height: 5px;
   top: 63%;
   left: 239px;
+  transform: rotate(45deg);
+  width: 5px;
 }
 
 .select_area {
-  width: 50%;
   appearance: none;
-}
-
-.phone_number {
-  margin-top: 20px;
+  width: 50%;
 }
 
 .course {
-  margin-top: 20px;
-  color: #545658;
   display: block;
 }
 
@@ -257,29 +229,27 @@ span::before {
   display: block;
   font-size: 16px;
   margin-top: 10px;
-  /* position: relative; */
 }
 
 .course_name::before {
-  content: "";
   border: solid 1px #d9d9d9;
+  content: "";
+  height: 15px;
+  left: -25px;
   position: absolute;
   width: 15px;
-  height: 15px;
-  position: absolute;
-  left: -25px;
 }
 
 .checkbox:checked  + .course_name::after{
-  content: "";
-  position: absolute;
   border-right: 3px solid #01bfbd;
   border-bottom: 3px solid #01bfbd;
-  transform: rotate(45deg);
+  content: "";
+  position: absolute;
   height: 16px;
-  width: 8px;
-  top: -4px;
   left: -20px;
+  top: -4px;
+  transform: rotate(45deg);
+  width: 8px;
 }
 
 .course_name {
@@ -297,25 +267,21 @@ span::before {
 
 .input_area-note {
   height: 100px;
-  vertical-align: top;
   line-height: 25px;
   resize: none;
-}
-
-.create_account {
-  /* text-align: center; */
+  vertical-align: top;
 }
 
 .button-create_account {
-  margin-top: 23px;
-  width: 100%;
-  padding: 11px;
   background-color: #01bfbd;
-  color: #fff;
-  cursor: pointer;
   border-color: transparent;
   border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
   font-size: 13px;
+  margin-top: 23px;
+  padding: 11px;
+  width: 100%;
 }
 
 .button-create_account:hover {
@@ -324,9 +290,7 @@ span::before {
 
 .agreement {
   margin-top: 20px;
-  /* text-align: start; */
   line-height: 16px;
-  /* font-size: 12px; */
 }
 
 .link_color {
@@ -335,8 +299,8 @@ span::before {
 
 .footer {
   font-size: 12px;
-  text-align: center;
   padding: 34px 0 42px;
+  text-align: center;
 }
 
 .authentication_question {
