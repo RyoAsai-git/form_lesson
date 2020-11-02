@@ -303,13 +303,11 @@ span::before {
   line-height: 16px;
 }
 
-.link_color {
+.link {
   color: #01a6a4;
 }
 
-.link_color:hover {
-  border-bottom: 1px solid #ececec;
-  border-bottom-color: #01bfbd;
+.link:hover {
   color: #01bfbd;
 }
 
@@ -321,4 +319,10 @@ span::before {
 
 .authentication_question {
   margin-top: 13px;
+}
+
+.link-authenticate:hover {
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
+  color: #01bfbd;
 }
