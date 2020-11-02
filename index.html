@@ -62,7 +62,7 @@
 
           <div class="form_area birthplace">
             <p>出身</p>
-            <select name="birthplace" id="birthplace" class="input_area select_area">
+            <select id="birthplace" name="birthplace" class="input_area select_area">
               <option value="">東京</option>
               <option value="">千葉</option>
               <option value="">埼玉</option>
@@ -82,29 +82,29 @@
 
           <div class="form_area password">
             <p class="required_item">パスワード</p>
-            <input type="password" class="input_area" required>
+            <input type="password" id="password" name="password" class="input_area" required>
           </div>
           <div class="form_area password">
             <p class="required_item">パスワード(確認用)</p>
-            <input type="password" class="input_area" required>
+            <input type="password" id="password" name="password" class="input_area" required>
           </div>
 
           <div class="form_area course">
             <p>希望コース</p>
             <label for="front" class="checkbox_area">
-              <input type="checkbox" id="front" value="1" class="checkbox">
+              <input type="checkbox" id="front" name="front" value="1" class="checkbox">
               <p class="course_name">
                 フロントエンド
               </p>
             </label>
             <label for="back" class="checkbox_area">
-            <input type="checkbox" id="back" value="2" class="checkbox">
+            <input type="checkbox" id="back" name="back" value="2" class="checkbox">
               <p class="course_name">
                 バックエンド
               </p>
             </label>
             <label for="app" class="checkbox_area">
-              <input type="checkbox" id="app" value="3" class="checkbox">
+              <input type="checkbox" id="app" name="app" value="3" class="checkbox">
               <p class="course_name">
                 アプリ
               </p>
